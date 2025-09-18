@@ -9,12 +9,12 @@ class Locadora:
 
     ####Salvar nos arquivos
     def salvar_clientes(self):
-        with open("clientes.txt", "w", encoding="utf-8") as arquivo:
+        with open("clientes.csv", "w", encoding="utf-8") as arquivo:
             for cliente in self.clientes:
                 arquivo.write(f"{cliente.nome};{cliente.cpf}\n")
 
     def salvar_filmes(self):
-        with open("filmes.txt", "w", encoding="utf-8") as arquivo:
+        with open("filmes.csv", "w", encoding="utf-8") as arquivo:
             for filme in self.filmes:
                 arquivo.write(f"{filme.codigo};{filme.titulo};{filme.genero};{filme.ano};{filme.disponivel}\n")
 
